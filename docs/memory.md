@@ -18,17 +18,20 @@ FlowForge is a visual workflow automation platform using React Flow, FastAPI, Po
 ## 3. Current status
 | Workstream | Owner | Status | Evidence / PR | Blocker | Next action |
 |---|---|---|---|---|---|
-| API/backend | Alabhya | Not started | — | — | Review API contract and scaffold service |
-| Frontend/editor | Pawni | Not started | — | — | Review design and scaffold editor |
-| Execution engine/GitHub | Aditya | Not started | — | — | Create repo, branches and docs-only PR |
-| AI/integrations | Jayesh | Not started | — | — | Review schema and set up provider wrapper |
+| API/backend | Alabhya | Phase 0 done | PR #1 reviewed | — | Scaffold FastAPI project (Phase 1) |
+| Frontend/editor | Pawni | Phase 0 done | PR #1 reviewed | Branch behind dev | Sync branch with dev, then scaffold editor (Phase 1) |
+| Execution engine/GitHub | Aditya | Phase 0 done | PR #1 merged, branches created, branch protection set | — | Engine skeleton (Phase 1) |
+| AI/integrations | Jayesh | Phase 0 partial | `.env.example` pushed, no PR | Telegram bot not created | Complete Telegram bot setup, push code, open PR |
 
 ## 4. Daily log
 Append one entry per day; do not delete older entries.
 
 ### 22 November 2026
-- Baseline documentation pack prepared for team review.
-- Next: confirm docs, create repo/branches and merge docs-only PR before implementation.
+- **Aditya:** Created GitHub repo. Created `main`, `dev`, and 4 feature branches. Pushed 8 baseline docs. Opened and merged PR #1 (`docs/project-baseline` → `dev`). Set up branch protection on `main` and `dev`. Added PR template and `check_docs.py` validation script.
+- **Jayesh:** Checked out `feature/jayesh-ai` branch. Pushed `.env.example` with Telegram/Gemini env vars (commit `9124f4c`). Telegram bot NOT yet created. No code written. No PR opened.
+- **Alabhya:** Branch `feature/alabhya-api` exists, synced with dev. No code activity yet.
+- **Pawni:** Branch `feature/pawni-frontend` exists but is behind `dev` (missing docs commits). Needs to sync. No code activity yet.
+- **Status:** Phase 0 exit gate partially met — docs merged but `memory.md` needed updating. Branch protection now configured. `feature/pawni-frontend` needs sync with `dev`.
 
 ## 5. Open questions
 - Which LLM provider/key quota will the team use for the demo?

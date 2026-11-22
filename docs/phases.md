@@ -81,3 +81,7 @@ Each owner reports: `Done | Tests/evidence | Blockers | Next`. Update relevant d
 | Date | Owner | Update | Status |
 |---|---|---|---|
 | 22 Nov | Aditya | Ten-day phased baseline created; reduced availability on 24–25 accounted for. | Planned |
+| 22 Nov | Aditya | Repo created, branches set up, 8 docs merged via PR #1, branch protection on main/dev, PR template and check_docs.py added. | Done |
+| 22 Nov | Jayesh | Pushed `.env.example` to `feature/jayesh-ai`. Telegram bot not yet created, no integration code written, no PR. | Partial |
+| 22 Nov | Alabhya | Branch exists, synced with dev. No code activity. | Not started |
+| 22 Nov | Pawni | Branch exists but behind dev (missing docs). No code activity. | Not started |
